@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Demonstrates using a relative layout to create a form -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:padding="10px">
+
+	<Button android:id="@+id/idbut" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10px"
+            android:text="ID" />          
+   
+    <EditText android:id="@+id/id" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:layout_toRightOf="@id/idbut"
+              android:layout_alignTop="@id/idbut"
+              android:background="@android:drawable/editbox_background"/>
+              
+    <EditText android:id="@+id/date" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_toRightOf="@id/id"
+            android:layout_alignTop="@id/id"
+            android:background="@android:drawable/editbox_background"/>
+              
+	<Button android:id="@+id/gpsbut" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/idbut"
+            android:layout_alignParentLeft="true"
+            android:text="1. Tap to assign GPS" />
+                        
+    <EditText android:id="@+id/lat" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/gpsbut"
+            android:background="@android:drawable/editbox_background"/>
+                         
+      
+    <Button android:id="@+id/photo" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/lat"
+            android:text="2. Tap to add photo" />
+            
+    <Button android:id="@+id/notes" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo" 
+            android:text="3. Tap to enter form data" />
+
+  <!--  <Button android:id="@+id/store" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/notes"  
+            android:layout_alignTop="@id/photo" 
+            android:layout_marginLeft="10px"
+            android:text="Store" /> -->
+            
+     <Button android:id="@+id/store" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="4. Store Entry" />
+    
+                    
+     <ImageView android:id="@+id/image"
+     		android:layout_below="@id/notes"
+     		android:layout_above="@id/store"
+     		android:layout_marginTop="10px"
+		  	android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+			android:layout_weight="1"/>
+			
+	 
+			
+</RelativeLayout>

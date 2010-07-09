@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<Button android:id="@+id/flip_me_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Back"
+            />
+           
+<TextView android:id="@+id/flip_me_text"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/flip_me_b"
+			android:textStyle="bold"
+			android:text="Test"
+			android:layout_marginLeft="10px"
+			android:layout_marginTop="14px"
+			
+			/>
+			
+<Button android:id="@+id/flip_me_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Next"
+            />			
+          
+</RelativeLayout>
+
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/flipper"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:scrollbars="vertical">
+
+<TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="0,1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<CheckBox
+			android:checked="false"
+			android:text="@string/txt"
+			android:id="@+id/txt"
+			/>
+		<EditText
+			android:id="@+id/txttext"
+			/>
+
+		<TextView
+			android:text="@string/typ"
+			android:textSize="18px"
+			android:textColor="#ffffff"
+			/>
+
+		<TableRow>
+		<CheckBox
+			android:checked="false"
+			android:id="@+id/vA"
+			android:text="@string/vA"
+			android:layout_column="0"
+			android:layout_span="1"
+			/>
+
+		<CheckBox android:id="@+id/vAcheck"
+			android:layout_column="1"
+			/>
+		</TableRow>
+
+		<TableRow>
+		<CheckBox
+			android:checked="false"
+			android:id="@+id/vB"
+			android:text="@string/vB"
+			android:layout_column="0"
+			android:layout_span="1"
+			/>
+
+		<CheckBox android:id="@+id/vBcheck"
+			android:layout_column="1"
+			/>
+		</TableRow>
+
+		<TableRow>
+		<CheckBox
+			android:checked="false"
+			android:id="@+id/vC"
+			android:text="@string/vC"
+			android:layout_column="0"
+			android:layout_span="1"
+			/>
+
+		<CheckBox android:id="@+id/vCcheck"
+			android:layout_column="1"
+			/>
+		</TableRow>
+
+</TableLayout>
+</ScrollView>
+
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fadingEdgeLength="6px"
+>
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<TextView
+			android:text="@string/cat"
+			android:textSize="18px"
+			android:textColor="#ffffff"
+			/>
+		<Spinner
+			android:id="@+id/cat"
+			/>
+
+		<CheckBox
+			android:checked="false"
+			android:text="@string/lng"
+			android:id="@+id/lng"
+			/>
+		<EditText
+			android:id="@+id/lngtext"
+			/>
+
+
+		
+	
+</TableLayout>
+</ScrollView>
+
+</ViewFlipper>
+
+</LinearLayout>

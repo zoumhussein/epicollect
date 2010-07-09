@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@drawable/background"
+    	>
+    
+    <ImageView android:id="@+id/image"
+     	android:layout_marginTop="5px"
+     	android:layout_centerHorizontal="true" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+	/>
+            
+	<Button android:id="@+id/newbut" 
+		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/image"
+    	android:layout_alignParentLeft="true"
+    	android:layout_marginTop="10px"
+    	android:layout_centerHorizontal="true" 
+    	android:text="New Entry" 
+    />
+    
+	<Button android:id="@+id/listbut" 
+		android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+    	android:layout_below="@id/newbut"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerHorizontal="true" 
+    	android:text="List Entries" 
+    />
+    
+	<Button android:id="@+id/mapbut" 
+		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/listbut"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerHorizontal="true" 
+    	android:text="Display Map" 
+    />
+                
+    <TextView android:id="@+id/spintext"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_centerHorizontal="true" 
+    	android:layout_below="@id/mapbut"
+		android:text="Select Project"
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:textColor="#FF000000"
+		android:background="#FFFFFFFF"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="20dip"
+		/>
+			
+	<Spinner
+		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/spintext"
+		android:id="@+id/proj_spin"
+		android:layout_marginBottom="10dip"
+		/>
+	
+	<TextView android:id="@+id/urltext1"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_centerHorizontal="true" 
+    	android:layout_below="@id/proj_spin"
+		android:text="Project URL is:"
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:textColor="#FF000000"
+		android:background="#FFFFFFFF"
+		android:gravity="center_horizontal"
+		/>
+		
+	<TextView android:id="@+id/urltext2"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_centerHorizontal="true" 
+    	android:layout_below="@id/urltext1"
+		android:text="http://www.epicollect.net/project.html?name=demoproject"
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:textColor="#FF000000"
+		android:background="#FFFFFFFF"
+		android:gravity="center_horizontal"
+		/>
+		
+	<Button android:id="@+id/helpbut" 
+		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true" 
+    	android:text="Help" 
+    
+    
+	/>
+    
+</RelativeLayout>
