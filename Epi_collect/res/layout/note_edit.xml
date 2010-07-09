@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/flipper"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+</ViewFlipper>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:scrollbars="vertical">
+
+<TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- android:stretchColumns="1,2" -->
+
+		<TextView
+			android:text="@string/txt"
+			android:textStyle="bold"
+			/>
+		<EditText
+			android:id="@+id/txt"
+			/>
+
+		<TextView
+			android:text="@string/typ"
+			android:textStyle="bold"
+			/>
+		<CheckBox
+			android:id="@+id/vA"
+			android:text="@string/vA"
+			/>
+
+		<CheckBox
+			android:id="@+id/vB"
+			android:text="@string/vB"
+			/>
+
+		<CheckBox
+			android:id="@+id/vC"
+			android:text="@string/vC"
+			/>
+
+		<TextView
+			android:text="@string/cat"
+			android:textStyle="bold"
+			/>
+		<Spinner
+			android:id="@+id/cat"
+			/>
+
+		<TextView
+			android:text="@string/lng"
+			android:textStyle="bold"
+			/>
+		<EditText
+			android:id="@+id/lng"
+			/>
+
+
+		
+	<View
+		android:layout_height="2px"
+        android:background="#DDFFDD"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        />
+                
+                
+	<TableRow>	
+	<Button android:id="@+id/confirm" 
+	  	android:text="Confirm"
+	  	/>
+	<TextView android:id="@+id/blank"
+	    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/confirm"
+			/>
+	</TableRow>
+	
+</TableLayout>
+</ScrollView>
+</LinearLayout>

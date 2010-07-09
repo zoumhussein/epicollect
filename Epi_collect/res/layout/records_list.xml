@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:padding="10px">    
+    <Button android:id="@+id/synch" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="Tap to Synchronize Entries" />
+            
+    <Button android:id="@+id/help" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synch" 
+            android:text="Help" />
+
+            
+    <ListView android:id="@+id/android:list"
+          android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/help"/>
+        	
+  	<TextView android:id="@+id/android:empty"
+          android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="15dip"
+			android:gravity="center_horizontal"
+			android:layout_below="@id/help" 
+			android:text="No Entries Available"/>
+</RelativeLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu_list">List Entries</string>
+    <string name="menu_listlocal">List Local Entries</string>
+    <string name="menu_listall">List All Entries</string>
+    <string name="menu_listremote">List Remote Entries</string>
+    <string name="menu_synch">Synchronize</string>
+    <string name="menu_new_entry">New Entry</string>
+    <string name="menu_delete">Delete Entry</string>
+    <string name="menu_delete_photo">Delete Photo</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_delsynch">Delete Synchronized</string>
+    <string name="menu_delall">Delete All</string>
+    <string name="menu_delremote">Delete Remote Entries</string>
+    <string name="menu_photo">Select Photo</string>
+    <string name="menu_photo_synch">Synchronize All Images</string>
+    <string name="menu_local">Local Entries</string>
+    <string name="menu_remote">Remote Entries</string>
+    <string name="update_menu_remote">Update Remote Entries</string>
+    <string name="menu_remove_local">Remove Local Entries</string>
+    <string name="menu_remove_remote">Remove Remote Entries</string>
+    <string name="menu_filter">Filter</string>
+    <string name="my_location">My Location</string>
+    <string name="menu_compass">Compass On/Off</string>
+    <string name="menu_location">Location On/Off</string>
+    <string name="menu_web">Web Entries</string>
+    <string name="menu_select">Select</string>
+    <string name="menu_change_gps">Change GPS</string>
+    <string name="menu_reset">Reset Data</string>
+    <string name="menu_home">Home</string>
+    <string name="load_project">Load Project</string>
+    <string name="delete_project">Delete Project</string>
+        
+    <string name="less">Less than:</string>
+    <string name="greater">Greater than:</string>
+   
+    <string name="remote_xml">"http://epicollectserver.appspot.com/downloadFromServer"</string>
+    <string name="image_url">"http://epicollectserver.appspot.com/uploadImageToServer"</string>
+    <string name="synch_url">"http://epicollectserver.appspot.com/uploadToServer"</string>
+    
+    <!-- <string name="project_url">"http://www.doc.ic.ac.uk/~dmh1/Android/"</string> -->
+    <string name="project_url">"http://epicollectserver.appspot.com/getForm?projectName="</string>
+
+    <!-- <string name="remote_xml">"http://www.epicollect.net/cntd/xml.asp"</string>
+    <string name="image_url">"http://www.epicollect.net/cntd/upload_photo.php"</string>
+    <string name="synch_url">"http://www.epicollect.net/cntd/insert.asp"</string> -->
+
+    <!-- string name="remote_xml">"http://www.spatialepidemiology.net/epicollect1/test/frogs.asp"</string>
+    <string name="image_url">"http://www.spatialepidemiology.net/epicollect/tropmedres/upload_photo.php"</string>
+    <string name="synch_url">"http://www.spatialepidemiology.net/epicollect/tropmedres/insert.asp"</string> -->
+    <!-- <string name="login_url">"http://www.spatialepidemiology.net/epicollect/tropmedres/login.asp"</string> -->
+
+	<string name="app_name">EpiCollect</string>
+	<string name="project">IntegraTest</string>
+	<string name="changesynchronized">no</string>
+	<string name="txt">Text</string>
+	<string name="typ">Type</string>
+	<string name="vA">A</string>
+	<string name="vB">B</string>
+	<string name="vC">C</string>
+	
+	<string name="checkbox_typ">vA,,vB,,vC</string>
+	<string name="checkbox_values_typ">vA,,vB,,vC</string>
+	<string name="cat">Category</string>
+	<string name="spinner_cat">Select,,One,,Two,,Three</string>
+	<string name="spinner_values_cat">Null,,v1,,v2,,v3</string>
+	<string name="lng">Long</string>
+	<string name="textviews">txt lng</string>
+	<string name="checkboxes">vA vB vC</string>
+	<string name="spinners">cat</string>
+	<string name="checkboxgroups">typ</string>
+	<string name="doubles"></string>
+	<string name="integers"></string>
+
+	<string name="requiredtext">txt</string>
+	<string name="requiredspinners"></string>
+
+	<string name="listfields">txt</string>
+	<string name="listspinners"></string>
+	<string name="listcheckboxes"></string>
+
+	<string name="notepages">1</string>
+
+	<string name="notepages_map">2</string>
+
+	<string name="flip_me_text">blank</string>
+	<string name="btn_n">confirm</string>
+	<string name="btn_b">confirm</string>
+	<string name="flip_me_text_map">flip_me_text</string>
+	<string name="btn_n_map">flip_me_n</string>
+	<string name="btn_b_map">flip_me_b</string> 
+	 
+	<!--<string>id="@+id/help_text">We are <b><i>so</i></b> glad to see you.</string>-->
+	
+</resources>
